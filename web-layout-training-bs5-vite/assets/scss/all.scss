@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/scss/functions";
+//變數,要改變數就改這邊...可以覆蓋原本下面bs5（複製bs5的scss放在utils）
+@import './utils/variables';
+//等同於把所有BS5的SCSS通通載入進來
+@import "../../node_modules/bootstrap";
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './pages/index.scss';
+
