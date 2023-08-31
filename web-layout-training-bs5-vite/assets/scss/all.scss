@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap/scss/functions";
+@import "../../assets/scss/reset";
 //變數,要改變數就改這邊...可以覆蓋原本下面bs5（複製bs5的scss放在utils）
 @import './utils/variables';
 //等同於把所有BS5的SCSS通通載入進來
@@ -9,3 +10,41 @@
 @import './layout/footer.scss';
 @import './pages/index.scss';
 
+body{
+    font-family:  'Noto Sans TC', sans-serif;
+}
+
+// .container{
+//     max-width: 1296px;
+// }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+img {
+    height: auto;
+    max-width: 100%;
+       vertical-align: middle;
+   }
+
+
+
+.shrikhand{
+    font-family: 'Shrikhand', cursive;
+    font-size: 32px;
+    line-height: 1.5;
+    color: black;
+  }
+
+ .majorBG{
+    background: linear-gradient(80deg, #7000FF 0%, #11002D 100%);
+}
+
+.minorBG{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #300871 0%, #000 100%);
+}
+
+.letterSpacing48{
+  letter-spacing: 48px;
+}

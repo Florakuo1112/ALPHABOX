@@ -1,3 +1,54 @@
-.index-title {
-  font-size: 100px;
+.containerB{
+  max-width: 1720px;
+  margin: 0 auto;
 }
+
+
+
+.alphaboxLogo{
+  width: 196px;
+}
+
+@keyframes rotate {
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+.rotation{
+  animation-name:rotate;
+  animation-duration: 20s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
+    
+  }
+
+
+.dimensionA{
+  width:24%;
+  
+
+}
+
+
+
+.dimensionB{
+  width: 48.6%;
+}
+
+
+
+
+
+
+
+.bar{
+  height: 40px;
+}
+
+
+
+.carousel-inner{
+  margin: 0 auto;
+}
+
+

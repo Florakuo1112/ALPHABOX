@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://kumo.tw/article.php?id=75 -->
+<html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="有時候我們想放一張背景圖，但是又不希望背景圖太過搶眼，這時候除了可以在背景上加上半透明底色的內框之外，還可以對這個內框做模糊效果，這樣就能讓文字變得清">
+	<meta name="keywords" content="背景模糊, 毛玻璃效果, CSS">
+	<meta property="og:title" content="CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子">
+	<meta property="og:description" content="有時候我們想放一張背景圖，但是又不希望背景圖太過搶眼，這時候除了可以在背景上加上半透明底色的內框之外，還可以對這個內框做模糊效果，這樣就能讓文字變得清">
+	<meta property="og:image" content="https://kumo.tw/img/20220901062424.jpg">
+	<meta property="og:image:secure_url" content="https://kumo.tw/img/20220901062424.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="628">
+	<meta property="og:site_name" content="架站盒子">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://kumo.tw/article.php?id=75">
+	<link rel="stylesheet" href="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/hope.css" type="text/css">
+	<link rel="stylesheet" href="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/all.css" type="text/css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="https://kumo.tw/img/web/favicon.ico">
+	<link rel="canonical" href="https://kumo.tw/article.php?id=75">
+	<script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/f(7).txt"></script><script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/f(8).txt" id="google_shimpl"></script><script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/async-ads.js"></script><script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/jquery-3.4.1.js"></script>
+	<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/preload.js"></script>
+	<title>CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子</title>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://kumo.tw/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "網頁設計",
+				"item": "https://kumo.tw/category.php?id=15"
+			},
+			{
+				"@type": "ListItem",
+				"position": 3,
+				"name": "CSS",
+				"item": "https://kumo.tw/category.php?id=8"
+			}
+					]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "NewsArticle",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://kumo.tw/article.php?id=75"
+		},
+		"headline": "CSS 背景模糊（失焦效果）backdrop-filter",
+		"image": [
+		"https://kumo.tw/img/20220901062424.jpg"
+		],
+		"datePublished": "2022-09-01T14:51:08+08:00",
+		"dateModified":  "2022-09-01T14:51:08+08:00",
+		"author": {
+		"@type": "Person",
+		"name": "架站盒子",
+		"url": "https://kumo.tw/article.php?id=1"
+		},
+		"publisher": {
+		"@type": "Organization",
+		"name": "架站盒子",
+		"logo": {
+			"@type": "ImageObject",
+			"url": "https://kumo.tw/img/web/banner-logo.png"
+		}
+		}
+	}
+	</script>
+<script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/cse_element__zh_tw.js" type="text/javascript"></script><link type="text/css" href="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/default+zh_TW.css" rel="stylesheet"><link type="text/css" href="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/minimalist.css" rel="stylesheet"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#282828;background-color:#282828}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#282828}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#000000;background-color:#333333;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#333333;border-color:#333333;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#444444;border-color:#444444;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#282828}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#282828}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#EEEEEE}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#EEEEEE}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#EEEEEE}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#FFF}.gsc-cursor-page{color:#EEEEEE}a.gsc-trailing-more-results:link{color:#EEEEEE}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#CCCCCC}.gs-webResult div.gs-visibleUrl{color:#BF9000}.gs-webResult div.gs-visibleUrl-short{color:#BF9000}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-webResult div.gs-visibleUrl-breadcrumb{display:none}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-breadcrumb{display:none}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#444444;background-color:#FFFFFF;color:#444444}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#333333;background-color:#FFFFFF;color:#333333}.gsc-webResult.gsc-result.gsc-promotion{border-color:#282828;background-color:#282828}.gsc-completion-title{color:#EEEEEE}.gsc-completion-snippet{color:#CCCCCC}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#EEEEEE}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#EEEEEE}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#FFD966}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#FFD700}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#CCCCCC}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#BF9000}.gcsc-find-more-on-google{color:#EEEEEE}.gcsc-find-more-on-google-magnifier{fill:#EEEEEE}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><meta http-equiv="origin-trial" content="A7CQXglZzTrThjGTBEn1rWTxHOEtkWivwzgea+NjyardrwlieSjVuyG44PkYgIPGs8Q9svD8sF3Yedn0BBBjXAkAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A3vKT9yxRPjmXN3DpIiz58f5JykcWHjUo/W7hvmtjgh9jPpQgem9VbADiNovG8NkO6mRmk70Kex8/KUqAYWVWAEAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A4A26Ymj79UVY7C7JGUS4BG1s7MdcDokAQf/RP0paks+RoTYbXHxceT/5L4iKcsleFCngi75YfNRGW2+SpVv1ggAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
+<body>
+	<div id="bgWrap"></div>
+	<div class="light"></div>
+	<!-- Google Analytics -->
+	<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/js"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-MJGCWWCVB3');
+	</script>
+	<!-- Google Adsense -->
+	<div id="gad"><script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/f(9).txt" crossorigin="anonymous"></script></div>
+    <!-- Pupop Image -->
+	<div id="pupopImgBox">
+		<div id="pupopImgContent" class="pupopImgContent">
+			<img id="pupopImg" onclick="pupop(this)">
+		</div>
+	</div>
+	<div id="Goto" style="display: block;">
+	  <div id="GotoTop">
+	    <i class="fa-solid fa-caret-up"></i>
+	    <span>up</span>
+	  </div>
+	  <div id="GotoBottom">
+	    <i class="fa-solid fa-caret-down"></i>
+	    <span>down</span>
+	  </div>
+	</div>
+	<header>
+		<div id="categoryBox">
+			<div id="CloseCategoryBox" style="width: 100px; height: 100px; float: right; margin: 2em 2em 0px 0px; background: rgba(143, 243, 33, 0.19); border: 2px dashed rgb(136, 136, 136); border-radius: 100%; display: flex; justify-content: center; align-items: center; opacity: 0;">
+				Close
+			</div>
+
+			<div id="cata_smallBox" style="opacity: 0;">
+				<div id="cata_lay_li" style="opacity: 0;">
+				
+						<div class="lay1" id="fol_15" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=15">網頁設計</a>
+						</div>
+						
+						<div class="lay1" id="fol_19" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=19">程式設計</a>
+						</div>
+						
+						<div class="lay1" id="fol_22" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=22">架站相關</a>
+						</div>
+						
+						<div class="lay1" id="fol_23" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=23">作業系統</a>
+						</div>
+						
+						<div class="lay1" id="fol_24" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=24">職人生活</a>
+						</div>
+						
+						<div class="lay1" id="fol_12" style="opacity: 0;">
+							<a href="https://kumo.tw/category.php?id=12">綜合分類</a>
+						</div>
+										</div>
+				<nav id="cata_nav">
+					<div id="note_icon" style="opacity: 0;"></div>
+					<ol>
+										
+								<li class="lay2 fol_15">
+									<a href="https://kumo.tw/category.php?id=5">HTML</a>
+								</li>				
+								<li class="lay2 fol_15">
+									<a href="https://kumo.tw/category.php?id=8">CSS</a>
+								</li>				
+								<li class="lay2 fol_15">
+									<a href="https://kumo.tw/category.php?id=16">Design</a>
+								</li>				
+								<li class="lay2 fol_19">
+									<a href="https://kumo.tw/category.php?id=4">JavaScript</a>
+								</li>				
+								<li class="lay2 fol_19">
+									<a href="https://kumo.tw/category.php?id=18">jQuery</a>
+								</li>				
+								<li class="lay2 fol_19">
+									<a href="https://kumo.tw/category.php?id=6">PHP</a>
+								</li>				
+								<li class="lay2 fol_19">
+									<a href="https://kumo.tw/category.php?id=7">Mix PL</a>
+								</li>				
+								<li class="lay2 fol_22">
+									<a href="https://kumo.tw/category.php?id=2">XAMPP</a>
+								</li>				
+								<li class="lay2 fol_22">
+									<a href="https://kumo.tw/category.php?id=21">MySql</a>
+								</li>				
+								<li class="lay2 fol_22">
+									<a href="https://kumo.tw/category.php?id=14">SEO</a>
+								</li>				
+								<li class="lay2 fol_22">
+									<a href="https://kumo.tw/category.php?id=9">SNS</a>
+								</li>				
+								<li class="lay2 fol_23">
+									<a href="https://kumo.tw/category.php?id=26">Windows</a>
+								</li>				
+								<li class="lay2 fol_23">
+									<a href="https://kumo.tw/category.php?id=11">Mac OS</a>
+								</li>				
+								<li class="lay2 fol_24">
+									<a href="https://kumo.tw/category.php?id=27">職業工會</a>
+								</li>				
+								<li class="lay2 fol_24">
+									<a href="https://kumo.tw/category.php?id=28">生活日誌</a>
+								</li>				
+								<li class="lay2 fol_24">
+									<a href="https://kumo.tw/category.php?id=13">小豬撲滿</a>
+								</li>				
+								<li class="lay2 fol_24">
+									<a href="https://kumo.tw/category.php?id=33">Excel</a>
+								</li>				
+								<li class="lay2 fol_12">
+									<a href="https://kumo.tw/category.php?id=29">網路服務</a>
+								</li>				
+								<li class="lay2 fol_12">
+									<a href="https://kumo.tw/category.php?id=30">電腦資訊</a>
+								</li>				
+								<li class="lay2 fol_12">
+									<a href="https://kumo.tw/category.php?id=3">關於本站</a>
+								</li>				
+								<li class="lay2 fol_12">
+									<a href="https://kumo.tw/category.php?id=31">其他</a>
+								</li>					</ol>
+				</nav>
+							</div>
+
+		</div>
+		<div id="categoryBtn">
+			<i class="fas fa-align-justify"></i>
+		</div>
+		<div class="topArea">
+			<div>
+				<a href="https://kumo.tw/">架站盒子<div>Web Development Box</div></a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<aside class="left_area">
+			<div class="status">
+				<div style="width: 200px;margin: 0 auto;text-align: left;padding-left: 10px;">
+				線上訪客: 2<br>本日人次: 31<br>昨日人次: 801<br>累積人次: 376559<br>				</div>
+			</div>
+		</aside>
+		<aside class="right_area">
+			<section style="width: 300px; height: auto !important;">
+				<!-- AD -->
+				<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-2969778954609193" data-ad-slot="4702379373" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 600px; width: 300px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:300px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ads.html" data-google-container-id="a!2" data-google-query-id="CI__y4LyhIEDFQn5vQodhzAAuQ" data-load-complete="true"></iframe></div></ins>
+				<script>
+					 (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</section>
+		</aside>
+		
+	<div class="textContentBox">
+		<ol class="breadcrumbs">
+			<li><a href="https://kumo.tw/">Home</a></li>
+			<li><a href="https://kumo.tw/category.php?id=15">網頁設計</a></li>
+				<li><a href="https://kumo.tw/category.php?id=8">CSS</a></li>		</ol>　
+		<button class="searchBtn" onclick="search();">
+			<i id="searchIcon" class="fas fa-search"></i>
+		</button>
+		<div id="search">
+			<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/f(10).txt">
+			</script>
+			<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-zh-TW"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="搜尋" aria-label="搜尋" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="清除搜尋框" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>搜尋</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="清除結果">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">自訂搜尋</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-refinementsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><div class="gsc-above-wrapper-area-backfill-container"></div><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">排序依據：</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+		</div>
+		<div class="TitleBox">
+			<h1>CSS 背景模糊（失焦效果）backdrop-filter</h1>
+			<div class="pageInfo">
+				<time datetime="2022-09-01T14:51:08+08:00" itemprop="dateModified">Updated: 2022-09-01</time>
+				│ 2741 Views │ <span class="categoryFile"><i class="fas fa-folder-open"></i> <a href="https://kumo.tw/category.php?id=8">CSS</a></span>				<div class="likeText" style="">有 <span class="likesCount">4</span> 人覺得本文有幫助。</div>
+			</div>
+		</div>
+		<article class="articleArea">
+
+
+<figure>
+	<img class="first" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/20220901062424.jpg" alt="CSS 背景模糊（失焦效果）backdrop-filter" onclick="pupop(this)">
+	<figcaption>CSS 背景模糊（失焦效果）backdrop-filter</figcaption>
+</figure>
+
+<ol class="toc">
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#example">範例</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#run">實際操作</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#prefix">瀏覽器兼容問題</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#other">其他值</a>
+	<ol>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#brightness">brightness：亮度</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#contrast">contrast：對比</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#grayscale">grayscale：灰階</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#hue-rotate">hue-rotate：色相旋轉</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#invert">invert：負片</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#sepia">sepia ：懷舊</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#saturate">saturate：飽和</a>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#drop-shadow">drop-shadow：下拉陰影</a>
+	</li>
+	</ol>
+	</li>
+	<li>
+		<a href="https://kumo.tw/article.php?id=75#mix">混合應用</a>
+	</li>
+</ol>
+
+<p>
+有時候我們想放一張背景圖，但是又不希望背景圖太過搶眼，這時候除了可以在背景上加上半透明底色的內框之外，還可以對這個內框做模糊效果，這樣就能讓文字變得清晰，又不顯單調。
+</p>
+
+<h2><a href="https://kumo.tw/article.php?id=75#example" id="example">範例</a></h2>
+<pre><code>
+div <text class="code_white" style="color: rgb(255, 255, 255);">{</text>
+backdrop<text class="code_orange" style="color: rgb(212, 96, 102);">-</text>filter<text class="code_green" style="color: rgb(79, 171, 180);">:</text>blur<text class="code_white" style="color: rgb(255, 255, 255);"><text class="code_white" style="color: rgb(255, 255, 255);">(</text></text><text class="code_gold" style="color: rgb(255, 215, 0);">5</text>px<text class="code_white" style="color: rgb(255, 255, 255);">)</text>;
+<text class="code_white" style="color: rgb(255, 255, 255);">}</text>
+</code>
+</pre>
+
+<p>
+<span class="code">backdrop</span>意思是背景，<span class="code">filter</span>是濾鏡，背景濾鏡有很多個值可以用，其中一個是<span class="code">blur</span>，表示模糊，後面的數值是模糊程度。
+</p>
+
+<h2><a href="https://kumo.tw/article.php?id=75#run" id="run">實際操作</a></h2>
+
+<h3><a href="https://kumo.tw/article.php?id=75#no-backdrop-filter" id="no-backdrop-filter">沒有模糊效果</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_1" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/qBYWyLX(1).html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_qBYWyLX"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#backdrop-filter" id="backdrop-filter">有模糊效果</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_2" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/vYjBrZL(1).html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_vYjBrZL"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h2><a href="https://kumo.tw/article.php?id=75#prefix" id="prefix">瀏覽器兼容問題</a></h2>
+
+<p>
+值得注意的是，目前 safari 並無支援此項用法，因此在 safari 瀏覽器上看並不會有模糊效果，請再加上<span class="code">-webkit-backdrop-filter:blur(5px);</span>。
+</p>
+
+<div class="url">
+如果不知道-webkit-是什麼，請參考：<a href="https://kumo.tw/article.php?id=74">CSS -webkit-、-moz-、-o-的意思（瀏覽器兼容）</a>
+</div>
+
+<h2><a href="https://kumo.tw/article.php?id=75#other" id="other">其他值</a></h2>
+
+<p>
+除了模糊效果之外，還有很多其他效果，以下列出<span class="code">backdrop-filter</span>所有效果。
+</p>
+
+<ul>
+<li>blur：模糊</li>
+<li>brightness：亮度</li>
+<li>contrast：對比</li>
+<li>grayscale：灰階</li>
+<li>hue-rotate：色相旋轉</li>
+<li>invert：負片</li>
+<li>sepia ：懷舊</li>
+<li>saturate：飽和</li>
+<li> opacity：透明度 </li>
+<li>drop-shadow：下拉陰影</li>
+</ul>
+
+<h3><a href="https://kumo.tw/article.php?id=75#brightness" id="brightness">brightness：亮度 </a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_3" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/VwxZGRO(1).html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_VwxZGRO"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#contrast" id="contrast">contrast：對比</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_4" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/mdLbGYd(1).html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_mdLbGYd"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#grayscale" id="grayscale">grayscale：灰階</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_5" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/qBYWMzg.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_qBYWMzg"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#hue-rotate" id="hue-rotate">hue-rotate：色相旋轉</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_6" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/wvjwYwz.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_wvjwYwz"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#invert" id="invert">invert：負片</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_7" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/NWMKOWd.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_NWMKOWd"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#sepia" id="sepia">sepia：懷舊</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_8" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/MWGgPYQ.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_MWGgPYQ"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#saturate" id="saturate">saturate：飽和</a></h3>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_9" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ZEozqbo.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_ZEozqbo"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h3><a href="https://kumo.tw/article.php?id=75#drop-shadow" id="drop-shadow">drop-shadow：下拉陰影</a></h3>
+
+<p>
+下拉陰影和<span class="code">box-shadow</span>很像，不同的是它是以物件本身內容產生陰影，因此裡面的文字或圖像也會有所渲染，而<span class="code">box-shadow</span>則是以區塊來產生陰影，其內容不會受到影響。
+</p>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_10" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/rNvVGvp.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_rNvVGvp"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<h2><a href="https://kumo.tw/article.php?id=75#mix" id="mix">混合應用</a></h2>
+
+<p>
+<span class="code">backdrop-filter</span>可以同時使用多個值，以下作為範例：
+</p>
+
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_11" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/mdLbzPe.html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_mdLbzPe"></iframe></div>
+<script async="" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ei.js"></script>
+
+<p>
+以上皆需要多加<span class="code">-webkit-</span>，safari 瀏覽器才有效果。
+</p>                        <h2>延伸閱讀</h2><ul><li><a href="https://kumo.tw/article.php?id=56">色碼表即時調色（線上工具）</a></li><li><a href="https://kumo.tw/article.php?id=79">CSS 區塊元素（div）垂直置中的方法</a></li><li><a href="https://kumo.tw/article.php?id=96">CSS class 與 style 差異</a></li><li><a href="https://kumo.tw/article.php?id=22">CSS 滑鼠經過時顯示懸浮文字</a></li><li><a href="https://kumo.tw/article.php?id=44">CSS z-index 的用法與最大值、最小值</a></li><li><a href="https://kumo.tw/article.php?id=48">如何使用 Font Awesome Icon 圖示（2022年最新版v6）</a></li></ul>
+
+		</article>
+		<div id="likeBox">
+			<div class="likeTextBottom" style="display:none">有 <span class="likesCount">4</span> 人覺得本文有幫助。</div>
+			<div class="likeQuestBox">
+				<span class="likeQuest">本文是否對您有幫助？ </span><button id="liked" class="" onclick="liked();">Yes</button>
+				<span id="tips_like"></span>
+			</div>
+		</div>
+				</div>
+	
+	</main>
+	
+	<!-- <div class="profile"> -->
+		
+		<!-- <div class="profileIMG">
+			<img src="/img/web/webmaster.png?4"/>
+		</div> -->
+		<!-- <div class="liker">
+			<div id="liker">
+			</div>
+		</div> -->
+		<!-- <div class="sentenceBox">
+			<span class="triangle"></span>
+			<div class="sentence">
+				<span id="sentence"></span> <button onclick="runST()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+
+			</div>
+		</div>
+		
+		<div class="profileText">
+			<h3>架站盒子（小站長）</h3>
+			喜歡一邊聽著音樂一邊敲打鍵盤，不能成為熾熱的太陽，也要成為夜裡的月光，始終相信，微小的燭光不僅能溫暖自己，也能照亮別人。<br>
+		</div> -->
+		
+	<!-- </div> -->
+	
+	<footer class="footer">
+
+		
+		Today Visits: 31 │ Yesterday Visits: 801 │ Visits Total: 376559<br>		© 2021 - 2022<span id="year"></span> 架站盒子<br>
+		<a href="https://kumo.tw/article.php?id=2" class="legal">Legal Disclaimer - Privacy Statement</a>
+	</footer>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$.ajax({
+		type: "POST",
+		url: "/like.php",
+		dataType: "json",
+		data: {
+		publisherNum: "36.b9.85.3c.114.137.172.46.y9.07.v6.88",
+		article_id:"75",
+		liked:""
+		},
+		success: function(data) {
+			if(data.likesCount!=0){
+				$(".likeText").show();
+				$(".likesCount").html(data.likesCount);
+			}
+		},
+		error: function(jqXHR) {
+			$("#tips_like").html('<font class="red">Error</font>');
+		}
+	});
+	});
+	function liked(){
+	$.ajax({
+		type: "POST",
+		url: "/like.php",
+		dataType: "json",
+		data: {
+		publisherNum: "36.b9.85.3c.114.137.172.46.y9.07.v6.88",
+		article_id:"75",
+		liked:"liked"
+		},
+		success: function(data) {
+		$(".likeTextBottom").show();
+		$(".likeText").show();
+		$(".likesCount").html(data.likesCount);
+		$("#tips_like").html('<font class="red">謝謝您的回饋！</font>');
+		$("#liked").remove();
+		},
+		error: function(jqXHR) {
+			$("#tips_like").html('<font class="red">Error2</font>');
+		}
+	});
+	}
+	</script>
+	<script>document.write('<script src="/js/mode.js?' + new Date().getTime() + '"><\/script>')</script><script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/mode.js"></script>
+	<div id="script"><script src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/code.js"></script></div>
+
+	
+
+<table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/ads(1).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><iframe src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./CSS 背景模糊（失焦效果）backdrop-filter │ 架站盒子_files/zrt_lookup.html" style="display: none;"></iframe></html>
