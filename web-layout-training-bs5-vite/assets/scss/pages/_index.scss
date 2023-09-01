@@ -58,3 +58,68 @@
 .addPadding{
   padding-top: 84px;
 }
+
+.blur{
+  backdrop-filter: blur(12px);
+
+ 
+}
+
+.feature{
+  top: 25%;
+  right: 28%;
+  text-align: end;
+}
+
+.saira{
+  font-size:400px;
+  font-family: 'Saira Extra Condensed';
+  line-height: 1.5;
+
+}
+
+.px2{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.py25{
+padding-left: 40px;
+padding-right: 40px;
+}
+
+.castDiane{
+  background-color: black;
+  &:hover{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true);
+    background-size: cover;
+    opacity: 0.5;
+  }
+}
+
+.castFelix{
+  background-color: black;
+  &:hover{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true);
+    background-size: cover;
+    opacity: 0.5;
+  }
+}
+
+.castKarina{
+  background-color: black;
+  &:hover{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true);
+    background-size: cover;
+    opacity: 0.5;
+  }
+}
+
+.castVito{
+  background-color: black;
+  &:hover{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true);
+    background-size: cover;
+    opacity: 0.5;
+  }
+}
