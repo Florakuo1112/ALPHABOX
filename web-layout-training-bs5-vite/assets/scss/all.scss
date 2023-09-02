@@ -14,9 +14,7 @@ body{
     font-family:  'Noto Sans TC', sans-serif;
 }
 
-// .container{
-//     max-width: 1296px;
-// }
+
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -28,24 +26,110 @@ img {
        vertical-align: middle;
    }
 
+//container設定
+.container{
+  max-width: 1296px;
+}
+
+.containerB{
+  max-width: 1720px;
+  margin: 0 auto;
+}
 
 
+//特殊字體
 .shrikhand{
     font-family: 'Shrikhand', cursive;
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.5;    
+  }
+
+// 背景顏色
+// header的顏色
+ .headerBG{
+    background:#7000FF 0%;
+}
+
+// dividirBarBG
+.dividerbarBG{
+background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
+}
+
+//首頁的使用分享
+.primaryBGReverse{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #000 0%, #28085C 100%);
+}
+
+
+//首頁的最新消息＆聯絡我們頁面＆註冊頁面＆登入頁面
+.primaryBG{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
+}
+
+//首頁的聯絡我們
+.minorBG{
+  background: #1F0F39;
+}
+
+//關於我們頁面
+.secondaryBG{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #300871 0%, #000 100%);  
+}
+
+//submit按鈕的顏色
+.subBtnBG{
+  background-color: #6E01F8;
+}
+
+//璇轉效果
+@keyframes rotate {
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
+.rotation{
+  animation-name:rotate;
+  animation-duration: 20s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
     
   }
 
- .majorBG{
-    background: linear-gradient(80deg, #7000FF 0%, #11002D 100%);
+//自訂通用類別
+
+//2rem的軸向padding
+.py2{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+//2.5rem的軸向padding
+.py25{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.minorBG{
-  background: radial-gradient(50% 50.00% at 50% 50.00%, #300871 0%, #000 100%);
-  
-}
+//2.5rem的橫向padding 
+.px25{
+  padding-left: 40px;
+  padding-right: 40px;
+  }
+//
 
 .letterSpacing48{
   letter-spacing: 48px;
+}
+
+.letterSpacing20{
+  letter-spacing: 20px;
+}
+
+// 上下留白
+.contentPadding{
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+//首頁的最新消息＆使用分享
+.contentPadding2{
+  padding-top: 120px;
+  padding-bottom: 40;
 }

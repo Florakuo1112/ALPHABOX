@@ -1,68 +1,43 @@
-.containerB{
-  max-width: 1720px;
-  margin: 0 auto;
-}
 
-
+//  首頁 cover 
 
 .alphaboxLogo{
   width: 196px;
 }
 
-@keyframes rotate {
-  0%{transform:rotate(0deg);}
-  100%{transform:rotate(360deg);}
-}
-
-.rotation{
-  animation-name:rotate;
-  animation-duration: 20s;
-  animation-delay:0s;
-  animation-iteration-count: infinite;
-    
-  }
-
 
 .dimensionA{
   width:24%;
-  
-
 }
-
-
 
 .dimensionB{
   width: 48.6%;
 }
 
+//首頁cover角色圖片超過margin的設定
+.minorMargin{
+  margin-bottom: -60px;
+}
 
+//在什麼是alphabox+ 加上padding top 不然內容會被角色圖片蓋到
+.addPadding{
+  padding-top: 84px;
+}
 
-
-
-
-
+//什麼是  alphabox+ 
 .bar{
   height: 40px;
 }
-
 
 
 .carousel-inner{
   margin: 0 auto;
 }
 
-.minorMargin{
-  margin-bottom: -60px;
-}
 
-.addPadding{
-  padding-top: 84px;
-}
 
 .blur{
   backdrop-filter: blur(12px);
-
- 
 }
 
 .feature{
@@ -71,6 +46,28 @@
   text-align: end;
 }
 
+//最新消息
+.alphaboxLogoSmall{
+  width: 132px;
+}
+
+//聯絡我們
+.dot{
+  font-size: 8px;
+  line-height: 16px;
+}
+.remarkBar{
+  height: 8px;
+  border-radius: 24px;
+  width: 90%;
+}
+
+.comments{
+  height: 120px;
+}
+
+//主要角色 
+
 .saira{
   font-size:400px;
   font-family: 'Saira Extra Condensed';
@@ -78,15 +75,6 @@
 
 }
 
-.px2{
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.py25{
-padding-left: 40px;
-padding-right: 40px;
-}
 
 .castDiane{
   background-color: black;
