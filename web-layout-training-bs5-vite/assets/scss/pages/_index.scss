@@ -50,6 +50,25 @@
 .alphaboxLogoSmall{
   width: 132px;
 }
+//使用分享
+.swiper-slide{
+  height: 416px;
+}
+
+.swiper{
+  height: 464px;
+  margin-left: 0 ;
+}
+.swiper-scrollbar{
+  background: transparent;
+}
+
+//觀察element發現會產生出這個
+.swiper-scrollbar-drag{
+  background-color:white;
+  width: 100px;
+  height: 4px;
+}
 
 //聯絡我們
 .dot{
