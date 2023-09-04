@@ -5,34 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/ALPHABOX/assets/main-55a96e28.js"></script>
-    <link rel="stylesheet" href="/ALPHABOX/assets/main-63d97f98.css">
+
+    <!-- 載入google字體 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Shrikhand & Saira Extra Condensed -->
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Lato&family=Noto+Sans+TC&family=Oswald&family=Raleway:ital@1&family=Roboto&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap" rel="stylesheet">
+<!-- noto sans cjk tc -->
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Lato&family=Noto+Sans+TC&family=Oswald&family=Raleway:ital@1&family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+<!-- 載入googie symbo material -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- swipper -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+    <script type="module" crossorigin src="/ALPHABOX/assets/main-7d681d29.js"></script>
+    <link rel="stylesheet" href="/ALPHABOX/assets/main-4f226e08.css">
   </head>
   <body>
     <header class="headerBG">
 <div class="container py-3 ">
-    <div class="row d-flex justify-content-between">
+    <div class="row d-flex justify-content-between align-items-center">
     <div class="col-2">
-    <p class="shrikhand mb-0 text-light">ALPHABOX+</p>
+        <a href="index.html"> <h2 class="shrikhand mb-0 text-light">ALPHABOX+</h2></a>
+   
     </div>
 
     <div class="col-4 ">
-    <ul class="d-flex justify-content-between nav-link mb-0 text-light">
+    <ul class="d-flex justify-content-between mb-0 text-light">
         <li>產品</li>
-        <li>關於我們</li>
-        <li>最新消息</li>
-        <li>FAQ</li>
-        <li>聯絡我們</li>
+        <li><a href="about.html" class="text-light">關於我們</a></li>
+        <li >最新消息</li>
+        <li >FAQ</li>
+        <li><a href="contact.html" class="text-light">聯絡我們</a></li>
     </ul>
     </div>
 
     <div class="col-2">
-    <ul class="d-flex justify-content-between nav-link mb-0 text-light">
-        <li>註冊</li>
-        <li>登入</li>
+    <ul class="d-flex justify-content-between mb-0 text-light align-items-center ">
+        <a href="registration.html" class="text-light"><li>註冊</li></a>
+        <a href="login.html" class="text-light"><li>登入</li></a>
+        
         <a href="" class="text-decoration-none">
-        <li class="border border-dark px-3 bg-light text-dark rounded ">
-            <span class="material-symbols-outlined fs-6 lh-1 me-1">
+        <li class="border border-dark py-2 px-3 bg-light text-dark rounded ">
+            <span class="material-symbols-outlined fs-6 lh-1 me-1 " >
                 point_scan
                 </span>
                 訂閱
@@ -42,13 +60,52 @@
     </div>
 </div>
 </div>
-</header>    <h1>我是about</h1>
+</header>    <section class="secondaryBG py10">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+          <div class=" d-flex justify-content-between py25">
+            <p class="display-5 text-light mb-0">關 </p>
+            <p class="display-5 text-light mb-0">於 </p>
+            <p class="display-5 text-light mb-0">我 </p>
+            <p class="display-5 text-light mb-0">們 </p>
+          </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between mb-5">
+          <div class="col-6 text-light">
+            <p class="mb-0">創立於2021年，我們的使命是將科技與人性化設計相結合，為您打造最佳的3D立體投影陪伴機器人。憑藉創新的技術、卓越的研發團隊以及對品質的追求，我們致力於為全球用戶提供最先進且易用的陪伴機器人。</p>
+          </div>
+          <div class="col-5 d-flex flex-column justify-content-end text-light" style="font-size: 14px;">
+            <p class="text-end mb-0">我們擁抱變革，追求技術創新，以提供更卓越的產品給全球用戶。</p>
+            <p  class="text-end mb-0">我們始終以用戶需求為核心，致力於提供最滿意的產品與服務。</p>
+            <p  class="text-end mb-0"> 我們堅持高品質標準，確保每一款產品都經過嚴格的測試與品質把控。</p>
+            <p  class="text-end mb-0">我們重視團隊協作，鼓勵創意交流，共同為實現願景而努力。</p>
+          </div>
+        </div>
+      </div>
+
+      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/about_us.png?raw=true" alt="" class="mb-5">
+
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8 d-flex text-light align-items-center justify-content-between">
+            <span class="material-symbols-outlined text-center emergency">
+              emergency
+              </span>
+            <p class="mb-0">我們相信科技的力量能夠改變人類生活。通過不斷創新與優化，我們期待為您打造一款具有高度智能、豐富功能且呈現真實感的3D立體投影陪伴機器人，讓科技成為您生活中真誠的夥伴。 </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
     <div class="footer py-5">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-3">
-                <p class="shrikhand mb-0">ALPHABOX+</p>
-                <p class="mb-0">Copyright © 2023 Hexschool.</p>
+                <a href="index.html"><h2 class="shrikhand mb-0 text-dark">ALPHABOX+</h2></a>
+                <p class="mb-0 ">Copyright © 2023 Hexschool.</p>
             </div>
 
             <div class="col-2 d-flex flex-column justify-content-between ">
