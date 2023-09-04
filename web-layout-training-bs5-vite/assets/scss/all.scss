@@ -9,6 +9,8 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './pages/index.scss';
+@import './pages/pages.scss';
+
 
 body{
     font-family:  'Noto Sans TC', sans-serif;
@@ -25,7 +27,9 @@ img {
     max-width: 100%;
        vertical-align: middle;
    }
-
+a{
+  text-decoration: none;
+}
 //container設定
 .container{
   max-width: 1296px;
@@ -36,11 +40,16 @@ img {
   margin: 0 auto;
 }
 
+//常用到的米字符號
+.emergency{
+  font-size: 64px;
+  line-height: 1.25;
+}
 
 //特殊字體
 .shrikhand{
     font-family: 'Shrikhand', cursive;
-    font-size: 32px;
+    
     line-height: 1.5;    
   }
 
@@ -102,9 +111,65 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
+.pt2{
+    padding-top: 32px;
+   
+}
+
+.pb2{
+  
+  padding-bottom: 32px;
+}
 //2.5rem的軸向padding
 .py25{
   padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pb25{
+  padding-bottom: 40px;
+}
+//2.5rem的橫向padding
+.px25{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+//4rem的軸向padding
+.py4{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+//5rem的bottom padding
+.pb5{
+  padding-bottom: 80px;
+}
+
+//9rem的軸向padding
+.py9{
+  padding-top: 144px;
+  padding-bottom: 144px;
+}
+
+//10rem的軸向padding
+.py10{
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.pt10{
+  padding-top: 160px;
+}
+//7.5rem的軸向padding
+.pb75{
+  padding-bottom: 120px;
+}
+
+
+.pb
+//首頁的最新消息＆使用分享
+.contentPadding2{
+  padding-top: 120px;
   padding-bottom: 40px;
 }
 
@@ -123,13 +188,6 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   letter-spacing: 20px;
 }
 
-// 上下留白
-.contentPadding{
-  padding-top: 144px;
-  padding-bottom: 144px;
-}
-//首頁的最新消息＆使用分享
-.contentPadding2{
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
+
+
+
