@@ -33,10 +33,13 @@ a{
 //container設定
 .container{
   max-width: 1296px;
+  padding-left: 0px;
+  padding-right: 0px;
+
 }
 
 .containerB{
-  max-width: 1720px;
+  max-width: 1760px;
   margin: 0 auto;
 }
 
@@ -49,7 +52,6 @@ a{
 //特殊字體
 .shrikhand{
     font-family: 'Shrikhand', cursive;
-    
     line-height: 1.5;    
   }
 
@@ -83,6 +85,12 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
 //關於我們頁面
 .secondaryBG{
   background: radial-gradient(50% 50.00% at 50% 50.00%, #300871 0%, #000 100%);  
+}
+
+//產品介紹的使用分享部分
+.usercommentBG{
+  background: radial-gradient(105.81% 105.81% at 50% 50%, #28085C 0%, #000 100%);
+
 }
 
 //submit按鈕的顏色
@@ -135,10 +143,17 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   padding-right: 40px;
 }
 
+
+
 //4rem的軸向padding
 .py4{
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+//5rem的bottom padding
+.pt5{
+  padding-top: 80px;
 }
 
 //5rem的bottom padding
@@ -157,14 +172,38 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   padding-top: 160px;
   padding-bottom: 160px;
 }
+
+.px5{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .pt10{
   padding-top: 160px;
 }
+//6.5rem的軸向padding
+.py65{
+  padding-top: 114px;
+  padding-bottom: 114px;
+}
+
+.pt65{
+  padding-top: 114px;
+}
+
 //7.5rem的軸向padding
 .pb75{
   padding-bottom: 120px;
 }
 
+.pt75{
+  padding-top: 120px;
+}
+
+.py75{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .pb
 //首頁的最新消息＆使用分享

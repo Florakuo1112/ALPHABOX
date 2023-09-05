@@ -5,3 +5,47 @@
     
     margin: 10px;
 }
+
+//about
+.aboutusAlphabox{
+    border-bottom: 24px solid black;
+    h2{
+        font-size: 96px;
+    }
+    .containerB{
+        ul{
+            li{
+                width: 32%;
+            }
+        }
+    }
+   
+}
+
+//product
+
+.productIntro{
+    a{
+        color: white;
+    }
+    &:hover{
+        a{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+//使用分享
+.usersFeedback{
+   height: 416px; 
+   margin-bottom: 216px;
+}
+
+.highlight{
+    border-bottom: 2px solid transparent;
+    &:hover{
+        border-bottom: 2px solid black;
+        font-weight: 700;
+    }
+}
