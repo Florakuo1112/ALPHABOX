@@ -36,6 +36,16 @@
     }
 }
 
+.downwardCircle{
+    position: absolute;
+    left: -93px;
+    bottom: 60px;
+    z-index: 1;
+
+
+    
+}
+
 //使用分享
 .usersFeedback{
    height: 416px; 
@@ -47,5 +57,29 @@
     &:hover{
         border-bottom: 2px solid black;
         font-weight: 700;
+    }
+}
+
+//faq
+//faqlist的收合icon變化
+
+
+[aria-expanded="false"] .text-collapsed{
+    display:none
+}
+
+[aria-expanded="true"] .text-expanded{
+    display:none
+}
+
+//news
+.page{
+    li{
+        h4{
+            &:hover{
+                border-bottom: 1px solid white;
+            }
+        }
+        
     }
 }

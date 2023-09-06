@@ -72,7 +72,7 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
 }
 
 
-//首頁的最新消息＆聯絡我們頁面＆註冊頁面＆登入頁面
+//首頁的最新消息＆聯絡我們頁面＆註冊頁面＆登入頁面&最新消息頁面
 .primaryBG{
   background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
 }
@@ -218,6 +218,11 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   padding-right: 40px;
   }
 //
+
+.letterSpacing16{
+  letter-spacing: 16px;
+}
+
 
 .letterSpacing48{
   letter-spacing: 48px;
