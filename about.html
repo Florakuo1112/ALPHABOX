@@ -21,19 +21,19 @@
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
 />
 
-    <script type="module" crossorigin src="/ALPHABOX/assets/main-cdd5755f.js"></script>
-    <link rel="stylesheet" href="/ALPHABOX/assets/main-d8ecb551.css">
+    <script type="module" crossorigin src="/ALPHABOX/assets/main-7c1df53e.js"></script>
+    <link rel="stylesheet" href="/ALPHABOX/assets/main-cc9f781a.css">
   </head>
   <body>
     <header class="headerBG">
 <div class="container py-3 ">
     <div class="row d-flex justify-content-between align-items-center">
-    <div class="col-2">
-        <a href="index.html"> <h2 class="shrikhand mb-0 text-light">ALPHABOX+</h2></a>
+    <div class="col-md-2 col-6">
+        <a href="index.html"> <h2 class="shrikhand mb-0 text-light alphaboxHeader">ALPHABOX+</h2></a>
    
     </div>
 
-    <div class="col-4 ">
+    <div class="col-md-4 d-none d-md-block">
     <ul class="d-flex justify-content-between mb-0 text-light">
         <li> <a href="product.html" class="text-light">產品</a> </li>
         <li><a href="about.html" class="text-light">關於我們</a></li>
@@ -43,7 +43,10 @@
     </ul>
     </div>
 
-    <div class="col-2">
+    <div class="col-md-2 d-none d-md-block"> 
+        <!-- d-none d-md-block 768px以上出現 -->
+
+
     <ul class="d-flex justify-content-between mb-0 text-light align-items-center ">
         <a href="registration.html" class="text-light"><li>註冊</li></a>
         <a href="login.html" class="text-light"><li>登入</li></a>
@@ -60,7 +63,45 @@
         
     </ul>
     </div>
+
+    <div class="col-6 d-md-none d-flex justify-content-end ">
+        <a  data-bs-toggle="collapse" href="#collapseHeaderMenu" role="button" aria-expanded="false" aria-controls="collapseHeaderMenu">
+            <span class="material-symbols-outlined fs-1 text-light">
+                menu
+                </span>
+        </a>
+
+
+        
+    </div>
+
+
 </div>
+
+<div class="collapse headerBG collapseHeaderMenu" id="collapseHeaderMenu">
+    <div class="card card-body headerBG border-0">
+      <ul class="d-flex flex-column align-items-center py2">
+        <li> <a href="product.html" class="text-light ">產品</a> </li>
+        <li><a href="about.html" class="text-light ">關於我們</a></li>
+        <li > <a href="news.html" class="text-light "> 最新消息</a></li>
+        <li ><a href="faq.html" class="text-light "> FAQ</li>
+        <li><a href="contact.html" class="text-light ">聯絡我們</a></li>
+        <li><a href="registration.html" class="text-light ">註冊</a></li>
+        <li><a href="login.html" class="text-light ">登入</a></li>
+        <li><a href="" class="text-decoration-none text-dark py-2 px-3 bg-light rounded">
+            <span class="material-symbols-outlined fs-6 lh-1 me-1 " >
+                point_scan
+                </span>
+                訂閱
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
 </div>
 </header>    <section class="secondaryBG py10">
       <div class="container">
@@ -176,23 +217,24 @@
     <div class="footer py-5">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-3">
+            <div class="col-md-3">
                 <a href="index.html"><h2 class="shrikhand mb-0 text-dark">ALPHABOX+</h2></a>
-                <p class="mb-0 ">Copyright © 2023 Hexschool.</p>
+                <p class="mb-0 d-none d-md-block">Copyright © 2023 Hexschool.</p>
             </div>
 
-            <div class="col-2 d-flex flex-column justify-content-between ">
-                <span class="material-symbols-outlined text-center emergency">
+            <div class="col-md-2 d-flex flex-column justify-content-start justify-content-md-center ">
+                <span class="material-symbols-outlined emergency">
                     emergency
                     </span>
             </div>
 
             
-                <ul class=" col-3 d-flex justify-content-between mb-0 px-0  align-items-center">
-                    <li> <a href="about.html" class="text-dark">關於我們</a> </li>
-                    <li> <a href="product.html" class="text-dark"> 產品資訊 </a></li>
-                    <li><a href="faq.html" class="text-dark">常見問題</a></li>
-                    <li>隱私政策</li>
+                <ul class=" col-md-3 d-flex flex-column align-items-start flex-md-row justify-content-md-between align-items-md-center mb-0">
+                    <li> <a href="about.html" class="text-dark mb-2">關於我們</a> </li>
+                    <li> <a href="product.html" class="text-dark mb-2"> 產品資訊 </a></li>
+                    <li><a href="faq.html" class="text-dark mb-2">常見問題</a></li>
+                    <li><a href="#" class="text-dark mb-2">隱私政策</a></li>
+                    <li class="d-block d-md-none" style="letter-spacing: 1.6px;">Copyright © 2023 Hexschool.</li>
                 </ul>
             
         </div>     

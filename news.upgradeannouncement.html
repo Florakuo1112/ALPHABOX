@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>產品升級公告</title>
+
     <!-- 載入google字體 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,74 +103,91 @@
 
 
 </div>
-</header>        
-   <section class="primaryBG py10 border-bottom border-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-         <div class=" d-flex justify-content-between mb-1" >
-           <p class="display-4 text-light mb-0" style="font-weight: 900;">登</p>
-           <p class="display-4 text-light mb-0" style="font-weight: 900;">入  </p>
-         </div>
-        </div>
+</header>   <section class="primaryBG py10 pb75 upgradeAnnouncement">
+       <!-- 最新消息title -->
+       <div class="container">
+           <div class="row d-flex justify-content-center">
+               <div class="col-md-4 ">
+                   <ul class="d-flex justify-content-between text-light p-0 mb-0">
+                       <li class="display-5">最</li>
+                       <li class="display-5">新</li>
+                       <li class="display-5">消</li>
+                       <li class="display-5">息</li>
+                   </ul>
+               </div>
+           </div>
 
-        <div class="col-4 offset-md-2">
-    <!-- 旋轉alphabox+ -->
-            <div class="  d-flex justify-content-center">
-                <img class="rotation alphaboxLogo" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="ALPHABOX+">
-            </div>
-
-              <a class="d-flex justify-content-center" href="index.html"> <h2 class="shrikhand pt-4 pb2 text-light">ALPHABOX+</h2></a>
-
-            <button type="button" class="btn btn-outline-light d-flex w-100 rounded-pill justify-content-center py-2 mb-3">
-            <div class="d-flex">
-                <img class="companyLogo d-block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGWSURBVHgBpZQxT8JQEMfv2oomJgbj6sDkCLwgECcdGF0Mm4mKH8HdQeKiH8DNRGcnXJ0gJBoloWmCMXGquwMODELfO68GkNCW9OE/ebn2ev317t7rIWjoybZTC2idAlB5M5teDYuxIKae2+2MiWadYUleblScATFlGlaNTdK/VoTVfwFbtr3DJsWrS0QnBZG+jYqNVfJ3j96XlqligroXQnRnxeK0w298wrAuOJMiEHwhgu0pvEqg96kM64j9+xy2QQCvCNQckLrcEsINBdqdTl566gGGvYop1yQpRpmPS3YcZ33gqTtNGG8QNEDK3uh+DOSySpxvCrREbkFkKpOe8S4TUhk0FXZ8/oCEa6ApBOnOAMICaAPNZCQQDfwATXGbdqOBQC3QFAIevNh2NhwoB4+gr4SBVqPVdg4DwFwu1+Q+zgGlFcPA7QDw9xGqa5hDfZLnocBCNnuD/snXyY+oOvkvB8ZXH2SFTRdiiAfHW15kziZ9AaD/NY9kYTiVfXBNktwjUEXO/pghDc7KY38dFxOl6fd/ANvenUXWOyF6AAAAAElFTkSuQmCC" alt="Apple Logo">
-                <p class="mb-0 d-flex align-items-center">Continue with Apple</p>
-            </div>
-            </button>
-
-            <button type="button" class="btn btn-outline-light d-flex w-100 rounded-pill justify-content-center py-2 mb-4">
-                <div class="d-flex">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ9SURBVHgBpZRPaBNBFMbf2w3WgmJEoxRLEvDSooVNA6IgNK0H05PSQ1EsNj30aM9F/EONh0IPQr15aayHGvVQjJIcrAmIPdZI0UiRuDSKJRba2sSmSXbHN40pu5MNxfaDXfZ9O+83b94Mg2Chbz7F3qhLvbINupExhQG6vy8foz8sBYAZHWCqfT76GAGZmIuikfUp/YjSGH06jH4FaJJK4BHvfCxkNCVjsNzlHSdYSITVkZuSJ+bauu9ZAn91ekYYYzfgP4XAbs+1+c9VY5m/ijMQkA+VHpQW7BYpbJUxeJ3bOLBIgY0e8yANBto/xV5tT0CDUXsLaequu/jxCPyJuCoYgAwy/bojkUwY85On/X0MIciXzGGez+YeIq+OdmaianBoPuJUNcY6mxJJ1aJk+KD43VAEnwjbApbeQIwacdFolpf29zdeK0wavfPDGR/sIF3DVd4Tp2kGOg4irPJDjsMOonOrSkRoNZrU0y+wS7HKUapRHvYgiS/R5CBcgN0KISVRmUnBtr+LHvXVjGX6gPEha1ocw3RYwPIMDBL0UdWMbLrgfs67qGt6R/LqtGpRB5wd/umWkcWRn0WDdJpIkiV4Tt3MciNcOAnBnJc314myFFee9QRE2PGHt7oIlhBhlKPOjjaHtm6bchz6Xm64nnCYhVRar5peb6AsVOhlP/z7DDRnr4BY3TaQyxPuGaem1r0c0uv7TLERSpdK8P3oiTv8W64OWHqRijb1tvK4wwq4UpRNcaHhB5RsK3Awd2qMYDerfs0Fq0xdDlD/7oLQI7FCQMyCxobWBp+GTTbUEQfTjl2io9BCt2bLP6BK3Z+lrIQjvzb5dSi6Keb9BePV9a0NATGyAAAAAElFTkSuQmCC" alt="GoogleLogo" class="companyLogo">
-                    <p class="mb-0 d-flex align-items-center">Continue with Google</p>
+           <div class="row">
+               <div class="col-md-4">
+                <div>
+                <a href="news.html" class="d-flex justify-content-start text-light">
+                    <span class="material-symbols-outlined">
+                        north_west
+                        </span>
+                    <p>返回</p>
+                </a>
                 </div>
-            </button>
-            
-            <div class="d-flex">
-                <img src="/ALPHABOX/assets/Line 27-23acf100.svg" alt="line">
-                <p class="mb-0 text-light px-1">or</p>
-                <img src="/ALPHABOX/assets/Line 27-23acf100.svg" alt="line">
+
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/news/news_in.png?raw=true" alt="goodnews">
+
+               </div>
+
+               <div class="col-md-8 py25">
+
+            <div class="text-light py25 border-bottom border-top border-light">
+
+                <div class="d-flex align-items-center mb-2">
+                    <span class="material-symbols-outlined text-center emergency fs-5 me-3">
+                        emergency
+                    </span>
+                    <p class="letterSpacing16 mb-0">2023.06.30</p>
+                </div>
+
+                <h5 class="letterSpacing20">產品升級公告</h5>
+
+                <p>親愛的客戶們：</p>
+                <p>我們榮幸地向您宣布，經過不懈的努力與研發，ALPHABOX+ 已成功完成最新一代的升級！這次的升級將為您帶來更高的投影解析度、更精準的語音辨識技術，以及更豐富的情感識別功能。我們致力於為您打造最佳的陪伴機器人，讓科技更貼近您的生活。</p>
+                <p>在這次升級中，我們提升了投影解析度，讓影像更加清晰細緻，呈現出更真實的視覺效果。您將能夠更加享受在家中觀看高清影片或欣賞美景的樂趣。同時，我們優化了語音辨識技術，使機器人能更迅速且準確地識別您的聲音指令，提高互動體驗。</p>
+                <p>此外，我們增加了情感識別功能，使得機器人能更好地理解您的情緒，並根據您的需求提供適當的陪伴與支持。無論您需要傾聽、建議還是安慰，ALPHABOX+ 都將成為您身邊的貼心夥伴。</p>
+                <p>為感謝您一直以來對我們的支持，我們將在本月舉辦限時優惠活動，凡購買升級版3D立體投影陪伴機器人的客戶，均可享有九折優惠。機會難得，千萬不要錯過喔！</p>
+                <p>在未來的日子裡，我們將繼續投入研發，並積極採納用戶意見，以不斷完善產品功能並提高使用體驗。同時，我們承諾會為您提供優質的售後服務，確保您在購買與使用過程中得到全面支持。</p>
+                <p>再次感謝您對我們的信任與支持，讓我們攜手共創更美好的未來！若您對升級版3D立體投影陪伴機器人有任何疑問或建議，請隨時與我們的客服團隊聯繫，我們將竭誠為您解答。</p>
+                <p>敬祝 興旺發達！</p>
+                <p class="mb-0">ALPHABOX+ 團隊敬上 </p>
+
             </div>
 
-              
-    <!-- form -->
-          <div class="py-4">
-            <form action="" method="" class="flex-column" >
-             <input id="email" name="myEmail" type="email" value="EMAIL" class="d-flex w-100 py-2 px-3 mb-3">
-             <input id="password" name="myPassword" type="" value="密碼" class="d-flex w-100 py-2 px-3 mb-3">
-           </form>
-         </div>
 
-         <div class="d-flex"> 
-            <button type="button" class="subBtnBG w-100 rounded-1 border-0 py-2 px-3 my-1">
-              <div class="d-flex justify-content-center align-items-center text-light">
-              <span class="material-symbols-outlined d-block fs-6 lh-1 me-1">
-                point_scan
-                </span>
-                <p class="mb-0">立即登入</p>
-              </div>
-            </button>
-           </div>
- 
-           <div class="d-flex justify-content-end mt-2">
-               <p class="mb-0 text-light"><a href="login.html" style="text-decoration: underline;" class="text-light">忘記密碼</a></p>
+
+               </div>
            </div>
 
-        </div>
-      </div>
+           <div class="row">
+               <div class="col-md-8 offset-md-4">
+                <ul class="page d-flex  text-light justify-content-between ps-0" >
+          
+                    <li ><a href="#">
+                        
+                        <img src="/ALPHABOX/assets/line_start_arrow_notch-3ea0ea93.svg" alt="">
+                        <p class="text-light letterSpacing14 ">限時優惠活動</p>
+                    
+                    </a></li>
+                    <li ><a href="#">
+                        
+                        <img src="/ALPHABOX/assets/line_end_arrow_notch-0d98d9d7.svg" alt="">
+                    
+                    </a></li>
+                  
+                    
+                  </ul>
+               </div>
+           </div>
 
+      
+
+      
     </div>
-  </section>
+   </section>
     <div class="footer py-5">
     <div class="container">
         <div class="row justify-content-between">
@@ -199,4 +217,3 @@
     
   </body>
 </html>
-
