@@ -1,10 +1,131 @@
+//product
 
 
-//registration
-.companyLogo{
-    
-    margin: 10px;
+// 上面那排選擇人物
+.productIntro{
+
+    a{
+        color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 16px;
+        @include media-breakpoint-up (md){
+            padding-left: 48px;
+            padding-right: 48px;
+            font-size: 24px;
+        }
+    }
+    &:hover{
+        a{
+            background-color: white;
+            color: black;
+        }
+    }
 }
+
+.downwardCircle{
+    display:none;
+    @include media-breakpoint-up (md){
+        display: block;
+        position: absolute;
+        left: -95px;
+        bottom: 60px;
+        z-index: 1;
+    }
+  
+}
+
+//productCover section
+.productCover{
+    .productCoverContent{
+        li{
+            padding-left: 0px;
+            width: 100%;
+            @include media-breakpoint-up (md){
+                width: 50%;
+                padding-left: 40px;
+            }
+            img{
+                max-width: 100%
+            };
+            .shrikhand{
+            margin-top: 16px;
+             font-size: 40px;
+             @include media-breakpoint-up (md){
+                 font-size: 48px;
+                 margin-bottom: 24px;
+             }
+            }
+        }
+    }
+}
+
+//product.學術領導/知識分享/智能問答 
+.productFeature{
+    padding-bottom: 80px;
+    @include media-breakpoint-up (md){
+        padding-bottom: 120px;
+    }
+    .highlight{
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid black;
+            font-weight: 700;
+        }
+    }
+    .productFeatureTitle{
+        padding-top: 49px;
+        padding-bottom: 29px;
+        @include media-breakpoint-up(md){
+            padding-top: 62px;
+            padding-bottom: 40px;
+        }
+    }
+    .productFeatureContent{
+        div{
+            padding-top: 24px;
+            @include media-breakpoint-up(md){
+                padding-top: 120px;
+            }
+        }
+        }
+       
+}
+
+//product.使用分享
+.usercomment{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include media-breakpoint-up (md){
+        padding-top: 160px;
+    }
+    .usercommentTitle{
+        padding-bottom: 24px;
+        @include media-breakpoint-up(md){
+            padding-bottom:80px ;
+        }
+        
+    }
+}
+.usersFeedback{
+    height: auto;
+    margin-bottom: 24px;
+    padding: 24px;
+
+    @include media-breakpoint-up (md){
+        height: 416px; 
+        margin-bottom: 216px;
+        padding:40px
+    }
+ 
+
+
+}
+
+
+
 
 //about
 .aboutusAlphabox{
@@ -22,41 +143,22 @@
    
 }
 
-//product
-
-.productIntro{
-    a{
-        color: white;
-    }
-    &:hover{
-        a{
-            background-color: white;
-            color: black;
+//news
+.page{
+    li{
+        h4{border-bottom: 1px solid transparent;
+            &:hover{
+                border-bottom: 1px solid white;
+            }
         }
+        
     }
 }
 
-.downwardCircle{
-    position: absolute;
-    left: -93px;
-    bottom: 60px;
-    z-index: 1;
-
-
-    
-}
-
-//使用分享
-.usersFeedback{
-   height: 416px; 
-   margin-bottom: 216px;
-}
-
-.highlight{
-    border-bottom: 2px solid transparent;
-    &:hover{
-        border-bottom: 2px solid black;
-        font-weight: 700;
+//news.upgradeannouncement
+.upgradeAnnouncement{
+    p{
+        margin-bottom: 12px;
     }
 }
 
@@ -72,14 +174,22 @@
     display:none
 }
 
-//news
-.page{
-    li{
-        h4{
-            &:hover{
-                border-bottom: 1px solid white;
-            }
-        }
-        
-    }
+
+
+
+
+
+
+//registration
+.companyLogo{
+    
+    margin: 10px;
 }
+
+
+
+
+
+
+
+

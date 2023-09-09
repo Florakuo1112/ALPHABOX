@@ -7,17 +7,60 @@
 
 
 .dimensionA{
-  width:24%;
+  width: 100%;
+  @include media-breakpoint-up(md){
+    width:24%;
+  }
 }
 
 .dimensionB{
-  width: 48.6%;
+  width: 100%;
+  @include media-breakpoint-up(md){
+    width:48.6%;
+  }
+}
+
+
+.intro{
+  .cover{
+    padding-top: 24px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up (md){
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+    ul{
+      border-top: 1px solid $light;
+      @include media-breakpoint-up(md){
+        border-top: none;
+      }
+    }
+
+    .alphaboxStudio{
+      width: 100%;
+        @include media-breakpoint-up(md){
+          width: auto;
+        }
+      }
+    
+
+    .alphaboxStudioLink{
+      border-top: transparent;
+      @include media-breakpoint-up(md){
+        border-top:1px solid $light;
+
+    }
+
+  }
+}
 }
 
 //首頁cover角色圖片超過margin的設定
 .minorMargin{
-  margin-bottom: -60px;
+      margin-bottom: -60px;
 }
+
+  
 
 //在什麼是alphabox+ 加上padding top 不然內容會被角色圖片蓋到
 .addPadding{
@@ -29,9 +72,33 @@
   height: 40px;
 }
 
+.whatsAlphaboxTitle{
+  p{
+  font-size: 24px;
+  letter-spacing: 24px;
+  font-weight: 700;
+  @include media-breakpoint-up(md){
+    font-size:48px;
+    letter-spacing: 48px;
+  }
+}
+ul{
+  font-size: 24px;
+  width: 100%;
+  @include media-breakpoint-up(md){
+    font-size: 48px;
+    width: 50%;
+  }
+}
+}
+
 
 .carousel-inner{
   margin: 0 auto;
+  width:100%;
+  @include media-breakpoint-up(md){
+    width:50%
+  }
 }
 
 
@@ -41,16 +108,100 @@
 }
 
 .feature{
-  top: 25%;
-  right: 28%;
-  text-align: end;
+  top: 40%;
+  text-align: start;
+
+  @include media-breakpoint-up (md){
+    top: 25%;
+    right: 28%;
+    text-align: end;
+  }
 }
 
 //最新消息
 .alphaboxLogoSmall{
   width: 132px;
 }
-//使用分享
+
+.lastNews{
+  padding-top: 60px;
+  padding-bottom: 32px;
+  margin-left: 48px;
+  margin-right: 48px;
+  @include media-breakpoint-up(md){
+    padding-top: 160px;
+    padding-bottom:40px ;
+  } 
+  p{
+   font-size:40px;
+   @include media-breakpoint-up(md){
+     font-size: 48px;
+   } 
+  }
+}
+
+.lastNewsHighlight{
+  li{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include media-breakpoint-up(md){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    } 
+
+  }
+
+  .newsList{
+    width: 100%;
+    @include media-breakpoint-up(md){
+      width: 50%;
+    }
+  }
+  .newsList2{
+    @include media-breakpoint-up (md){
+      border-right: 1px solid $light;
+    }
+  }
+
+
+}
+
+.checkForMore{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include media-breakpoint-up (md){
+    padding-top: 76px;
+    padding-bottom: 96px;
+  }
+}
+
+
+
+//首頁的使用分享&聯絡我們
+.indexSection{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media-breakpoint-up (md){
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .col-md-7{
+    padding-top: 24px;
+  }
+
+}
+//首頁的使用分享&聯絡我們 + 產品頁面的使用分享
+.indexSectionTitle{
+  font-size: 40px;
+  letter-spacing: 40px;
+  @include media-breakpoint-up(md){
+    font-size: 48px;
+    letter-spacing: 48px;
+  }
+ 
+}
+
+//首頁的使用分享
 .swiper-slide{
   height: 416px;
 }
@@ -63,7 +214,7 @@
   background: transparent;
 }
 
-//觀察element發現會產生出這個
+//觀察element發現會產生出這個,可用於調整scrollbar bar的顏色
 .swiper-scrollbar-drag{
   background-color:white;
   width: 100px;
@@ -75,6 +226,12 @@
   font-size: 8px;
   line-height: 16px;
 }
+.remarkBarArea{
+  width: 50%;
+  @include media-breakpoint-up(md){
+    width: 100%;
+  }
+}
 .remarkBar{
   height: 8px;
   border-radius: 24px;
@@ -85,7 +242,31 @@
   height: 120px;
 }
 
+.contactUs{
+  button{
+    width: 100%;
+    @include media-breakpoint-up(md){
+      width: 50%;
+    }
+  }
+  .remarkBarArea{
+    margin-bottom:20px;
+    @include media-breakpoint-up(md){
+      margin-bottom:38px ;
+    }
+  }
+}
+
 //主要角色 
+
+.majorCast{
+  li{
+    width: 50%;
+    @include media-breakpoint-up (md){
+      width: 25%;
+    }
+  }
+}
 
 .saira{
   font-size:400px;

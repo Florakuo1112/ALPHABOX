@@ -26,35 +26,63 @@
 
 <!--  首頁 cover -->
 
-<section class=" intro" style="background-image:url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true');background-size: cover;">
+<section class=" intro minorMargin" style="background-image:url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true');background-size: cover;">
 
-    <div class="containerB pt-5 pb-3">
+    <div class="containerB pb-3 cover">
 
-    <ul class="d-flex justify-content-between py-2 ps-0 mb-0">
-      <li class="pb-1 border-bottom border-light text-light d-flex flex-column-reverse">最新消息！新版本 v15.4 釋出，搶先體驗！</li>
-      <li class="rotation alphaboxLogo">
+    <ul class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-md-between align-items-md-stretch  py-2 ps-0 mb-0">
+      <li class="pb-1 border-bottom border-light text-light d-none d-md-flex  flex-column-reverse">最新消息！新版本 v15.4 釋出，搶先體驗！</li>
+      <li class="rotation alphaboxLogo  " >
         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="ALPHABOX+">
       </li>
-      <li class="d-flex flex-column justify-content-between">
-        <p class="text-light pt-1 border-top">ALPHABOX+ STUDIO</p>
-        <p style="color:#ad93cf">Copyright © 2023 Hexschool.</p>
+      <li class="d-md-flex flex-md-column justify-content-md-between alphaboxStudio">
+        <p class="text-light pt-2 alphaboxStudioLink">ALPHABOX+ STUDIO</p>
+        <p style="color:#ad93cf" class="d-none d-md-block">Copyright © 2023 Hexschool.</p>
       </li>
     </ul>
 
   </div>
+
+<!-- md才會出現 -->
+  <div class="container">
+    <ul class="d-block d-flex d-md-none ps-0 justify-content-between shrikhand text-light mb-0">
+      <h2>A</h2>
+      <h2>L</h2>
+      <h2>P</h2>
+      <h2>H</h2>
+      <h2>A</h2>
+      <h2>B</h2>
+      <h2>O</h2>
+      <h2>X</h2>
+      <h2>+</h2>
+    </ul>
+    <div class="d-block d-md-none justify-content-center pb-3">
+    <p class=" justify-content-between text-light text-center">
+      擁抱未來科技，專屬您的3D立體投影陪伴機器人
+    </p>
+    </ul>
+  </div>
+  </div>
+
+  
   
 
   
 
   <div class="containerB minorMargin">
 
-    <ul class="d-flex justify-content-between ps-0 mb-0 ">
-      <li class="dimensionA d-flex flex-column-reverse" >
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true" alt="diana">
+    <ul class="d-flex flex-column flex-md-row justify-content-md-between ps-0 mb-0 ">
+      <li class="dimensionA d-flex flex-md-column-reverse pb-3"  >
+        <div style="position: relative;">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true" alt="diana" class="d-none d-md-block" >
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true" alt="diana" class="d-md-none">
+      
+        <p  class="shrikhand text-light" style="position:absolute; top: 16px; left:40%; z-index: 1; font-size: 32px;">Diane</p>
+      </div>
       </li>
 
       <li class="dimensionB ">
-        <ul class="d-flex justify-content-between shrikhand text-light mb-0">
+        <ul class="d-none d-md-flex justify-content-between shrikhand text-light mb-0">
           <h2>A</h2>
           <h2>L</h2>
           <h2>P</h2>
@@ -65,7 +93,7 @@
           <h2>X</h2>
           <h2>+</h2>
         </ul>
-        <div class="d-flex justify-content-center mb-4">
+        <div class="d-none d-md-flex justify-content-center mb-4">
         <ul class=" w-75 d-flex justify-content-between text-light">
           <li>擁</li>
           <li>抱</li>
@@ -92,14 +120,28 @@
         </ul>
       </div>
 
-      <div class="d-flex justify-content-between">
-        <img class="dimensionB " src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true" alt="felix">
-        <img class="dimensionB" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true" alt="karina">
+      <div class="d-flex flex-column flex-md-row justify-content-md-between">
+      <div class="dimensionB pb-3" style="position: relative;">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true" alt="felix" class="d-none d-md-block">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true" alt="felix" class="d-md-none">
+        <p  class="shrikhand text-light" style="position:absolute; top: 16px; left:40%; z-index: 1; font-size: 32px;">Felix</p>
+      </div>
+      <div class="dimensionB pb-3" style="position: relative;">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true" alt="karina" class="d-none d-md-block" >
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true" alt="karina" class="d-md-none">
+        <p  class="shrikhand text-light" style="position:absolute; top: 16px; left:38%; z-index: 1; font-size: 32px;">Karina</p>
+      </div>
       </div>
       </li>
 
-      <li class="dimensionA d-flex flex-column-reverse">
-        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true" alt="vito">
+      <li class="dimensionA d-flex flex-column-reverse pb-3" >
+        <div style="position: relative;">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true" alt="vito" class="d-none d-md-block">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true" alt="vito" class="d-md-none">
+
+        <p  class="shrikhand text-light" style="position:absolute; top: 16px; left:40%; z-index: 1; font-size: 32px;">Vito</p>
+      </div>
+
       </li>
     </ul>
 
@@ -111,9 +153,9 @@
 
 <!--  什麼是  alphabox+ -->
 
-<section class="secondaryBG " >
+<section class="secondaryBG addPadding"  >
   
-<div class="addPadding pb-5" style="background-image: url(../assets/images/mobile.png);background-position: left;background-size: 50% 100%;background-repeat: no-repeat;">
+<div class=" pb-5" style="background-image: url(../assets/images/mobile.png);background-position: left;background-size: 50% 100%;background-repeat: no-repeat;">
   <div class="blur" >
   
 
@@ -122,13 +164,28 @@
 
     <div class="w-100 bar dividerbarBG"></div>
 
-  <div class="display-5 letterSpacing48 text-light">什麼是</div>
-  <div class="display-5 letterSpacing48 text-light">ALPHABOX+</div>
+  <div class="whatsAlphaboxTitle text-light">
+    <p>什麼是</p>
+    <ul class="d-flex justify-content-between ps-0">
+      <li>A</li>
+      <li>L</li>
+      <li>P</li>
+      <li>H</li>
+      <li>A</li>
+      <li>B</li>
+      <li>O</li>
+      <li>X</li>
+      <li>+</li>
+    </ul>
+  </div>
+
   </div>
 </div>
 
+<div class="containerB">
+
 <div id="carouselExampleControls" class="carousel slide py-3 justify-content-between" data-bs-ride="carousel" >
-  <div class="carousel-inner w-50 " >
+  <div class="carousel-inner " >
     <div class="carousel-item active" >
       <img src="../assets/images/mobile.png" class="d-block w-100" alt="..." style="position: relative;">
     </div>
@@ -140,23 +197,25 @@
 
   <div class="feature text-light" style="position: absolute;">
     <div class="shrikhand text-light" style="font-size: 96px;">01</div>
-    <h2 class="mb-3" style="letter-spacing: 32px;">立體投影技術</h2>
-    <p>透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+    <h2 class="mb-3 letterSpacing32">立體投影技術</h2>
+    <p >透過高科技立體投影技術，讓您感受真實的科技世界。</p>
 
   </div>
 
 
-  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <button class="d-none d-md-block carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
     <img src="../assets/images/line_start_arrow_notch.svg" alt="previous">
   </button>
-  <button class="carousel-control-next ms-3" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <button class=" d-none d-md-block  carousel-control-next ms-3" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
     <img src="../assets/images/line_end_arrow_notch.svg" alt="next">
   </button>
 </div>
 
 <div class="w-100 bar dividerbarBG"></div>
+
+</div>
 
 
 
@@ -168,20 +227,20 @@
 <section>
   <div class="primaryBG contentPadding2">
     <div class="container">
-      <div class="row">
-        <div class="col-3">
-        <div class=" d-flex justify-content-between py25">
-          <p class="display-5 text-light mb-0">最 </p>
-          <p class="display-5 text-light mb-0">新 </p>
-          <p class="display-5 text-light mb-0">消 </p>
-          <p class="display-5 text-light mb-0">息 </p>
+      <div class="row lastNews" >
+        <div class="col-md-3 col-9">
+        <div class=" d-flex  justify-content-between">
+          <p class="text-light mb-0">最 </p>
+          <p class="text-light mb-0">新 </p>
+          <p class="text-light mb-0">消 </p>
+          <p class="text-light mb-0">息 </p>
         </div>
         </div>
       </div>
 
-      <ul class="d-flex flex-wrap ps-0 mb-0">
+      <ul class="d-flex flex-wrap ps-0 mb-0 lastNewsHighlight">
     <!-- 產品升級公告 -->
-        <li class=" w-100 py25 px-3 border-top border-bottom border-light">
+        <li class=" w-100 px-3 border-top border-bottom border-light">
           <div class="d-flex mb-2">
             <span class="material-symbols-outlined emergency text-light d-block fs-6 me-3 lh-base">
               emergency
@@ -190,15 +249,15 @@
           </div>
           <h5 class="text-light mb-2" style="letter-spacing: 20px;">產品升級公告</h5>  
           
-        <div class="row justify-content-between pt-1">
-          <div class="col-9 text-light"><p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p></div>
-          <div class="col-2">
+        <div class="row d-flex flex-column flex-md-row justify-content-md-between pt-1">
+          <div class="col-md-9 text-light"><p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p></div>
+          <div class="col-md-2">
             <a href=""><img src="../assets/images/line_end_arrow_notch.svg" alt=""></a>
           </div>
         </div>  
       </li>
     <!-- 限時優惠活動 -->
-      <li class=" w-50 py25  px-3  border-bottom border-end border-light">
+      <li class=" py25  px-3  border-bottom border-light newsList newsList2">
         <div class="d-flex mb-2">
           <span class="material-symbols-outlined emergency text-light d-block fs-6 me-3 lh-base">
             emergency
@@ -208,7 +267,7 @@
         <h5 class="text-light mb-2" style="letter-spacing: 20px;">限時優惠活動</h5>  
         <p class="text-light">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
         <div class="row">
-          <div class="col-2">
+          <div class="col-4 col-md-2">
             <a href=""><img src="../assets/images/line_end_arrow_notch.svg" alt=""></a>
           </div>
         </div>
@@ -216,7 +275,7 @@
     </li>
 
     <!-- 新功能上線 -->
-    <li class=" w-50 py25  px-3  border-bottom border-light">
+    <li class="  py25  px-3  border-bottom border-light newsList">
       <div class="d-flex mb-2">
         <span class="material-symbols-outlined emergency text-light d-block fs-6 me-3 lh-base">
           emergency
@@ -226,7 +285,7 @@
       <h5 class="text-light mb-2" style="letter-spacing: 20px;">新功能上線</h5>  
       <p class="text-light">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
      <div class="row">
-      <div class="col-2">
+      <div class="col-4 col-md-2">
         <a href=""><img src="../assets/images/line_end_arrow_notch.svg" alt=""></a>
       </div>
      </div>
@@ -236,17 +295,21 @@
   </li>
       </ul>
 
-    <div class="py25">
-    <!--  這張圖片找不到也下載不出來只好這樣寫,我也不願意 -->
-      <div class="py2 d-flex justify-content-center text-light" style="position: relative;">
+    <div class="checkForMore">
+      
+      <div class=" d-flex justify-content-center text-light" style="position: relative;">
+        
         <p class="m-0 text-center primaryBG" style="position:absolute; top:45%; z-index: 1;">查看更多</p>
+      
         <div class="rotation alphaboxLogoSmall" >
-          <a href="#"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="ALPHABOX+">
+          <a href="news.html"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="ALPHABOX+">
           </a>
         </div> 
-      </div>
       
-      <p class="text-light text-end pt-5 m-0">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+      </div>
+   
+      
+      <p class="d-none d-md-block text-light text-end pt-5 m-0">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
     
     </div>
     </div>
@@ -255,16 +318,16 @@
 
 <!--  使用分享 -->
 <section>
-<div class="primaryBGReverse contentPadding2">
+<div class="primaryBGReverse indexSection">
 <div class="container">
       <div class="row justify-content-between mb-4">
-        <div class="col-3">
-          <div class="py25">
-        <div class=" d-flex justify-content-between mb-3">
-          <p class="display-5 text-light mb-0">使 </p>
-          <p class="display-5 text-light mb-0">用 </p>
-          <p class="display-5 text-light mb-0">分 </p>
-          <p class="display-5 text-light mb-0">享 </p>
+        <div class="col-md-3">
+          <div>
+        <div class=" d-flex justify-content-md-between mb-3 indexSectionTitle">
+          <p class="text-light mb-0">使 </p>
+          <p class=" text-light mb-0">用 </p>
+          <p class=" text-light mb-0">分 </p>
+          <p class="text-light mb-0">享 </p>
         </div>
         <p class="text-light d-flex align-items-center m-0">
           01 
@@ -273,18 +336,24 @@
           </span>
           04</p>
         </div>
-        <span class="material-symbols-outlined text-center emergency text-light">
+        <span class="material-symbols-outlined text-center emergency text-light d-none d-md-block">
           emergency
           </span>
       
         </div>
 
-        <div class="col-7">
-          <div class="py25"><p class="m-0 text-light">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p></div>
+        <div class="col-md-7">
+          <div><p class="m-0 text-light">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p></div>
+
+          <span class="material-symbols-outlined text-center emergency text-light d-md-none mt-4">
+            emergency
+            </span>
           
         </div>
       </div>
-<div class="d-flex justify-content-start">
+
+<!-- pc版的swipper md會隱藏-->
+<div class="d-none d-md-flex justify-content-start ">
 <!-- Swiper -->
 <div class="swiper mySwiper d-flex flex-column justify-content-between w-75 me-2 ">
     <div class="swiper-wrapper ">
@@ -456,6 +525,170 @@
 
 </div>
 
+<!-- md版的usercomment -->
+
+<ul class="d-flex flex-column d-md-none ps-0 mb-0 ">
+   <!-- #1 -->
+  <li >
+          <div class="text-light d-flex flex-column justify-content-between py-4 px-4 mb-3" style="background-color: #380C7E;">
+            <div>
+                <div class="d-flex align-items-center">
+                <p class="mb-0 me-2">Zona</p>
+                <span class="material-symbols-outlined text-light dot" style="font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24">
+                  circle
+                  </span>
+                <p class="mb-0 ms-2">Taipei</p>
+              </div>
+    
+              <p class="text-light mb-0 py2">ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+            </div>
+    
+            <div class="d-flex align-items-center" style="padding-top: 120px; ">
+              <span class="material-symbols-outlined text-light dot fs-6 me-3" style="font-variation-settings:
+              'FILL' 1,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24">
+                circle
+                </span>
+                <span class="material-symbols-outlined text-light dot fs-6 me-3" style="font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24">
+                  circle
+                  </span>
+                  <p class="mb-0">ALPHABOX+ Dianne</p>
+            </div>
+          </div>
+  </li>
+
+  <!-- #2 -->
+
+  <li >
+    <div class="text-dark d-flex flex-column justify-content-between py-4 px-4 mb-3" style="background-color: #fff">
+      <div>
+          <div class="d-flex align-items-center">
+          <p class="mb-0 me-2">Lin </p>
+          <span class="material-symbols-outlined text-dark dot" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+          <p class="mb-0 ms-2">Chiayi</p>
+        </div>
+
+        <p class="text-dark mb-0 py2">非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+      </div>
+
+      <div class="d-flex align-items-center" style="padding-top: 120px; ">
+        <span class="material-symbols-outlined text-dark dot fs-6 me-3" style="font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24">
+          circle
+          </span>
+          <span class="material-symbols-outlined text-dark dot fs-6 me-3" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+            <p class="mb-0">ALPHABOX+ Felix</p>
+      </div>
+    </div>
+</li>
+
+  <!-- #3 -->
+
+  <li >
+    <div class="text-light d-flex flex-column justify-content-between py-4 px-4 mb-3" style="background-color: #380C7E;">
+      <div>
+          <div class="d-flex align-items-center">
+          <p class="mb-0 me-2">云</p>
+          <span class="material-symbols-outlined text-light dot" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+          <p class="mb-0 ms-2">Taipei</p>
+        </div>
+
+        <p class="text-light mb-0 py2">我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+      </div>
+
+      <div class="d-flex align-items-center" style="padding-top: 120px; ">
+        <span class="material-symbols-outlined text-light dot fs-6 me-3" style="font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24">
+          circle
+          </span>
+          <span class="material-symbols-outlined text-light dot fs-6 me-3" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+            <p class="mb-0">ALPHABOX+ Dianne</p>
+      </div>
+    </div>
+</li>
+
+  <!-- #4 -->
+
+  <li >
+    <div class="text-dark d-flex flex-column justify-content-between py-4 px-4 mb-0" style="background-color:#fff">
+      <div>
+          <div class="d-flex align-items-center">
+          <p class="mb-0 me-2">Zichi</p>
+          <span class="material-symbols-outlined text-dark dot" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+          <p class="mb-0 ms-2">Kaohsiung</p>
+        </div>
+
+        <p class="text-dark mb-0 py2">讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+      </div>
+
+      <div class="d-flex align-items-center" style="padding-top: 120px; ">
+        <span class="material-symbols-outlined text-dark dot fs-6 me-3" style="font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24">
+          circle
+          </span>
+          <span class="material-symbols-outlined text-dark dot fs-6 me-3" style="font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24">
+            circle
+            </span>
+            <p class="mb-0">ALPHABOX+ Dianne</p>
+      </div>
+    </div>
+</li>
+  
+</ul>
+
 
 
  
@@ -476,18 +709,19 @@
 
 <!--  聯絡我們 -->
 <section class="contactUs">
-  <div class="minorBG py9">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-3">
-        <div class=" d-flex justify-content-between mb-1">
-          <p class="display-5 text-light mb-0">聯 </p>
-          <p class="display-5 text-light mb-0">絡 </p>
-          <p class="display-5 text-light mb-0">我 </p>
-          <p class="display-5 text-light mb-0">們 </p>
+  <div class="minorBG indexSection">
+    <div class="container d-md-flex ">
+      <div class="row d-flex flex-column flex-md-row justify-content-between">
+        <div class="col-md-3 col-9">
+        <div class=" d-flex justify-content-md-between mb-1 indexSectionTitle">
+          <p class="text-light mb-0">聯 </p>
+          <p class=" text-light mb-0">絡 </p>
+          <p class=" text-light mb-0">我 </p>
+          <p class="text-light mb-0">們 </p>
         </div>
+        
 
-        <div class="d-flex w-50 justify-content-between align-items-center mt-2 pb-5">
+        <div class="d-flex justify-content-between align-items-center mt-2 remarkBarArea">
           <span class="material-symbols-outlined text-light dot" style="font-variation-settings:
           'FILL' 1,
           'wght' 400,
@@ -498,15 +732,16 @@
           <div class="remarkBar bg-light">
           </div>
         </div>
+      </div>
 
-      <div class="pt-3 text-light">
+      <div class="text-light">
         <p class="mb-1">讓科技成為您的最佳夥伴</p>
-        <p>立即體驗神奇功能並享限時優惠！</p>
+        <p class="mb-0">立即體驗神奇功能並享限時優惠！</p>
       </div>
 
       </div>
 
-      <div class="col-7 flex-column">
+      <div class="col-md-7 flex-column">
         
           <span class="material-symbols-outlined emergency text-light d-block">
               emergency
@@ -516,7 +751,7 @@
             <input id="email" name="myEmail" type="email" value="EMAIL" class="d-flex w-100 py-2 px-3 mb-3">
             <input type = "text" value="COMMENTS" class="d-flex w-100 py-2 px-3 mb-3 comments">
             <div class="d-flex flex-row-reverse"> 
-          <button type="button" class="subBtnBG w-50 rounded-1 border-0 py-2 px-3">
+          <button type="button" class="subBtnBG rounded-1 border-0 py-2 px-3">
             <div class="d-flex justify-content-center align-items-center text-light">
             <span class="material-symbols-outlined d-block fs-6 lh-1 me-1">
               point_scan
@@ -539,71 +774,71 @@
 
 
 <!-- 主要角色 -->
-<section style="background-color: black;">
+<section class="majorCast" style="background-color: black;">
 
- <ul class="d-flex text-light p-0">
+ <ul class="d-flex text-light p-0 flex-wrap">
    <!-- diane -->
-   <li class="w-25 text-center py2 px25 castDiane ">
+   <li class="text-center py2 px25 castDiane ">
      <p class="saira mb-1">1</p>
      <h2 class="shrikhand text-center mt-3 pb-5">
        Diane
      </h2>
-     <ul class="d-flex justify-content-between pt-3 ps-2 pb-2">
-       <li class="text-start">
+     <ul class="d-flex flex-md-row flex-column pt-3 ps-2 pb-2 justify-content-between">
+       <li class="text-start w-75">
          <p class="mb-0">知識型</p>
          <p class="mb-0">學術領導/知識分享/智能問答</p>
        </li>
-       <li class="  d-flex justify-content-center">
+       <li class="  d-flex justify-content-center w-25">
         <img src="../assets/images/line_end_arrow_notch.svg" alt="line-end-arrow" class="w-75">
        </li>
      </ul>
    </li>
   <!-- felix -->
-  <li class="w-25 text-center px2 py25 castFelix">
+  <li class=" text-center px2 py25 castFelix  ">
     <p class="saira mb-1">2</p>
     <h2 class="shrikhand text-center mt-3 pb-5">
       Felix
     </h2>
-    <ul class="d-flex justify-content-between pt-3 ps-2 pb-2">
-      <li class="text-start">
+    <ul class="d-flex flex-md-row flex-column justify-content-between pt-3 ps-2 pb-2">
+      <li class="text-start w-75">
         <p class="mb-0">娛樂型</p>
         <p class="mb-0">音樂播放/語音互動/遊戲陪伴</p>
       </li>
-      <li class="  d-flex justify-content-center">
+      <li class="  d-flex justify-content-center flex-md-row flex-column w-25">
        <img src="../assets/images/line_end_arrow_notch.svg" alt="line-end-arrow" class="w-75">
       </li>
     </ul>
   </li>
 
   <!-- karina -->
-  <li class="w-25 text-center px2 py25 castKarina">
+  <li class=" text-center px2 py25 castKarina">
     <p class="saira mb-1">3</p>
     <h2 class="shrikhand text-center mt-3 pb-5">
       Karina
     </h2>
-    <ul class="d-flex justify-content-between pt-3 ps-2 pb-2">
-      <li class="text-start">
+    <ul class="d-flex flex-md-row flex-column justify-content-between pt-3 ps-2 pb-2">
+      <li class="text-start w-75">
         <p class="mb-0">生活型</p>
         <p class="mb-0">健康提醒/日程安排/智能家居</p>
       </li>
-      <li class="  d-flex justify-content-center">
+      <li class="  d-flex justify-content-center flex-md-row flex-column w-25">
        <img src="../assets/images/line_end_arrow_notch.svg" alt="line-end-arrow" class="w-75">
       </li>
     </ul>
   </li>
 
    <!-- vito -->
-   <li class="w-25 text-center px2 py25 castVito">
+   <li class=" text-center px2 py25 castVito">
     <p class="saira mb-1">4</p>
     <h2 class="shrikhand text-center mt-3 pb-5">
       Vito
     </h2>
-    <ul class="d-flex justify-content-between pt-3 ps-2 pb-2">
-      <li class="text-start">
+    <ul class="d-flex flex-md-row flex-column justify-content-between pt-3 ps-2 pb-2">
+      <li class="text-start w-75">
         <p class="mb-0">情感型</p>
         <p class="mb-0">情感識別/心情分析/心靈支持</p>
       </li>
-      <li class="  d-flex justify-content-center">
+      <li class="  d-flex justify-content-center flex-md-row flex-column w-25">
        <img src="../assets/images/line_end_arrow_notch.svg" alt="line-end-arrow" class="w-75">
       </li>
     </ul>

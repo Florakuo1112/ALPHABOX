@@ -33,14 +33,20 @@ a{
 //container設定
 .container{
   max-width: 1296px;
-  padding-left: 0px;
-  padding-right: 0px;
-
+  
 }
+  
+
+
+
 
 .containerB{
+  padding-left: 12px;
+  padding-right: 12px;
   max-width: 1760px;
   margin: 0 auto;
+  
+  
 }
 
 //常用到的米字符號
@@ -205,12 +211,7 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   padding-bottom: 120px;
 }
 
-.pb
-//首頁的最新消息＆使用分享
-.contentPadding2{
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
+
 
 //2.5rem的橫向padding 
 .px25{
@@ -219,13 +220,28 @@ background: linear-gradient(90deg,#7000FF 0%, #11002D 100%)
   }
 //
 
+.letterSpacing14{
+  letter-spacing: 14px;
+}
+
 .letterSpacing16{
   letter-spacing: 16px;
 }
 
+.letterSpacing32{
+  width: 100%;
+  letter-spacing: 24px;
+  @include media-breakpoint-up (md){
+    letter-spacing: 32px;
+  }
+
+}
+
 
 .letterSpacing48{
-  letter-spacing: 48px;
+  @include media-breakpoint-up (md){
+    letter-spacing: 48px;
+  }
 }
 
 .letterSpacing20{
