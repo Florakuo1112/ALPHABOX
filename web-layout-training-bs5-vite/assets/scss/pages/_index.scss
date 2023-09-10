@@ -193,10 +193,10 @@ ul{
 //首頁的使用分享&聯絡我們 + 產品頁面的使用分享
 .indexSectionTitle{
   font-size: 40px;
-  letter-spacing: 40px;
+ 
   @include media-breakpoint-up(md){
     font-size: 48px;
-    letter-spacing: 48px;
+  
   }
  
 }
@@ -242,7 +242,7 @@ ul{
   height: 120px;
 }
 
-.contactUs{
+.contact{
   button{
     width: 100%;
     @include media-breakpoint-up(md){

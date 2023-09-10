@@ -24,28 +24,28 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-   <section class="primaryBG py10 pb75 upgradeAnnouncement">
+   <section class="primaryBG upgradeAnnouncement">
        <!-- 最新消息title -->
        <div class="container">
-           <div class="row d-flex justify-content-center">
-               <div class="col-md-4 ">
-                   <ul class="d-flex justify-content-between text-light p-0 mb-0">
-                       <li class="display-5">最</li>
-                       <li class="display-5">新</li>
-                       <li class="display-5">消</li>
-                       <li class="display-5">息</li>
-                   </ul>
+           <div class="row d-flex justify-content-md-center justify-content-start">
+            <div class="col-md-4 col-9">
+                <div class=" d-flex justify-content-between subTitle" >
+                  <p class="text-light mb-0" style="font-weight: 900;">最 </p>
+                  <p class=" text-light mb-0" style="font-weight: 900;">新 </p>
+                  <p class=" text-light mb-0" style="font-weight: 900;">消 </p>
+                  <p class=" text-light mb-0" style="font-weight: 900;">息 </p>
+                </div>
                </div>
            </div>
 
            <div class="row">
                <div class="col-md-4">
-                <div>
+                <div class="mb-3">
                 <a href="news.html" class="d-flex justify-content-start text-light">
                     <span class="material-symbols-outlined">
                         north_west
                         </span>
-                    <p>返回</p>
+                    <p class="mb-0">返回</p>
                 </a>
                 </div>
 
@@ -53,9 +53,9 @@
 
                </div>
 
-               <div class="col-md-8 py25">
+            <div class="col-md-8 pt25">
 
-            <div class="text-light py25 border-bottom border-top border-light">
+            <div class="text-light px-3 border-bottom border-top border-light upgradeAnnouncementContent">
 
                 <div class="d-flex align-items-center mb-2">
                     <span class="material-symbols-outlined text-center emergency fs-5 me-3">
@@ -83,14 +83,15 @@
                </div>
            </div>
 
-           <div class="row">
-               <div class="col-md-8 offset-md-4">
-                <ul class="page d-flex  text-light justify-content-between ps-0" >
+           <div class="row" >
+               <div class="col-md-8 offset-md-4 pageDirection">
+                <ul class="d-flex  text-light justify-content-between ps-0 m-0" >
           
                     <li ><a href="#">
                         
                         <img src="../dist/assets/line_start_arrow_notch-3ea0ea93.svg" alt="">
-                        <p class="text-light letterSpacing14 ">限時優惠活動</p>
+                        <p class="text-light letterSpacing14 d-none d-md-block ">限時優惠活動</p>
+                        <p class="text-light  d-block d-md-none ">上一則</p>
                     
                     </a></li>
                     <li ><a href="#">
